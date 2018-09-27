@@ -1,0 +1,32 @@
+{
+  "name": "bctasc1",
+  "version": "1.0.0",
+  "description": "demo client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "server": "live-server public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tan10101/bctasc1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tan10101/bctasc1/issues"
+  },
+  "homepage": "https://github.com/tan10101/bctasc1#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "webpack": "^4.20.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.1"
+  }
+}
