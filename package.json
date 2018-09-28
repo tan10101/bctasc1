@@ -4,10 +4,9 @@
   "description": "demo client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --watch",
-    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
-    "server": "live-server public/"
+    "serve": "live-server public/",
+    "build": "webpack",
+    "dev-server": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -28,9 +27,11 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "validator": "^10.8.0",
-    "webpack": "^4.20.2"
+    "webpack": "^4.20.2",
+    "webpack-dev-server": "^3.1.9"
   },
   "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "webpack-cli": "^3.1.1"
   }
 }
