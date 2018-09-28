@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainMenu from './menu/main';
+import MainMenu from './Menu/Main';
 import { square, isEmail } from '../utils';
 
 console.log('am inside src/app.js');
